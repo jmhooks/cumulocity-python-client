@@ -2,8 +2,8 @@
 Template: https://www.cumulocity.com/guides/mqtt/hello-mqtt-python/
 
 Uses environment variables:
-- C8Y_USER
-- C8Y_PASS
+* C8Y_USER
+* C8Y_PASS
 - C8Y_TENANT
 - C8Y_BASE_URL
 - C8Y_SERVER_HOST
