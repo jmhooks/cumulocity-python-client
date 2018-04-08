@@ -2,7 +2,7 @@
 
 Template: [https://www.cumulocity.com/guides/mqtt/hello-mqtt-python/](https://www.cumulocity.com/guides/mqtt/hello-mqtt-python/)
 
-**Uses environment variables:**
+**Environment Variables:**
     
 	C8Y_USER
 	C8Y_PASS
@@ -12,15 +12,15 @@ Template: [https://www.cumulocity.com/guides/mqtt/hello-mqtt-python/](https://ww
 	C8Y_CLIENT_ID
 	C8Y_CLIENT_MODEL
 
-**Example:**
+**Example (in ~/.bashrc or ~/.bash_profile):**
 
-	C8Y_USER=apiuser
-	C8Y_PASS=oka*****
-	C8Y_TENANT=infrastructure
-	C8Y_BASE_URL=sbdconnect.io
-	C8Y_SERVER_HOST=infrastructure.sbdconnect.io
-	C8Y_CLIENT_ID=14.195066.1333
-	C8Y_CLIENT_MODEL=ESX-TC3G
+	export C8Y_USER=apiuser
+	export C8Y_PASS=oka*****
+	export C8Y_TENANT=infrastructure
+	export C8Y_BASE_URL=sbdconnect.io
+	export C8Y_SERVER_HOST=infrastructure.sbdconnect.io
+	export C8Y_CLIENT_ID=14.195066.1333
+	export C8Y_CLIENT_MODEL=ESX-TC3G
 
 **Use:**
 
