@@ -2,7 +2,7 @@
 
 Template: [https://www.cumulocity.com/guides/mqtt/hello-mqtt-python/](https://www.cumulocity.com/guides/mqtt/hello-mqtt-python/)
 
-Uses environment variables:
+**Uses environment variables:**
     
 	C8Y_USER
 	C8Y_PASS
@@ -12,7 +12,7 @@ Uses environment variables:
 	C8Y_CLIENT_ID
 	C8Y_CLIENT_MODEL
 
-Example:
+**Example:**
 
 	C8Y_USER=apiuser
 	C8Y_PASS=oka*****
@@ -22,18 +22,18 @@ Example:
 	C8Y_CLIENT_ID=14.195066.1333
 	C8Y_CLIENT_MODEL=ESX-TC3G
 
-Use:
+**Use:**
 
 * Connects device to Cumulocity
 * Updates device location using an external REST call
 * Sends random measurement values
 
-Installation:
+**Installation:**
 
 	git clone git@bitbucket.org:iotarchitecture/cumulocity-client-python.git
 	cd cumulocity-client-python
 	python setup.py install
 
-Running as a process:
+**Running as a process:**
 
 	cumulocity_client > /dev/null 2>&1 &
