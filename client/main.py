@@ -24,7 +24,7 @@ def on_message(client, userdata, message):
         publish("s/us", "501,c8y_Restart")
         log.info("...restarting...")
         publish("s/us", "503,c8y_Restart")
-        os.system('reboot')
+        os.popen('/sbin/reboot')
     if message.payload.startswith("511"):
         publish("s/us", "501,c8y_Command")
         command = str(message.payload.split(',')[2])
