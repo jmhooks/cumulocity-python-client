@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 # C8Y_TENANT, C8Y_USER, C8Y_PASS and C8Y_BASE_URL
 
@@ -20,7 +21,7 @@ def get_base_url():
 
 
 def get_client_id():
-    return os.environ.get('C8Y_CLIENT_ID')
+    return subprocess.check_output(["bash", "-c", "cat /proc/cpuinfo | grep Serial | cut -d ' ' -f 2"]).strip()
 
 
 def get_server_host():
@@ -32,7 +33,7 @@ def get_client_model():
 
 
 def print_env_values():
-    print os.environ.get('C8Y_CLIENT_ID')
+    #print os.environ.get('C8Y_CLIENT_ID')
     print os.environ.get('C8Y_USER')
     print os.environ.get('C8Y_PASS')
     print os.environ.get('C8Y_TENANT')
