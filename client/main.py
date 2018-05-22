@@ -36,7 +36,7 @@ def on_message(client, userdata, message):
         publish("s/us", "501,c8y_Software")
         url = str(message.payload.split(',')[4])
         log.info("Downloading software from URL: " + url)
-        os.system('/home/pi/cumulocity-python-client/install.sh')
+        os.system('/home/pi/cumulocity-python-client/install.sh > /var/log/uiot_client.log')
         publish("s/us", "503,c8y_Software")
 
 
