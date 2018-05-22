@@ -38,7 +38,7 @@ def on_message(client, userdata, message):
         log.info("Downloading software from URL: " + url)
         publish("s/us", "503,c8y_Software")
         os.system('/home/pi/cumulocity-python-client/install.sh >> /var/log/uiot_client.log')
-
+        log.info("Software installed")
 
 def send_measurements():
     global count
